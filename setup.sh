@@ -1,4 +1,4 @@
-BUILD_DIR=cmake-build-debug
+BUILD_DIR=build
 
 source /usr/share/gazebo/setup.sh
 export GAZEBO_PLUGIN_PATH=${PWD}/${BUILD_DIR}:$GAZEBO_PLUGIN_PATH
