@@ -18,7 +18,9 @@ This code user to work with gazebo9, and but I've recently tested it with gazebo
 
 cmake 2.8
 Gazebo
-
+```
+sudo apt install gazebo9 libgazebo9-dev
+```
 To get the dependencies, you can probably just install from apt
 
 # Building
