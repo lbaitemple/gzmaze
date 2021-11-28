@@ -29,6 +29,8 @@ To get the dependencies, you can probably just install from apt
     cd build
     cmake .. && make
 
+## on MacOS
+cmake .. -DQt5_DIR=$(brew --prefix qt5)/lib/cmake/Qt5
 # Running
 Be sure to add the following to your `.gazebo/gui.ini` file
 
