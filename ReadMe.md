@@ -43,5 +43,5 @@ Be sure to add the following to your `.gazebo/gui.ini` file
     source setup.sh #this will setup the environment variables you need and run gazebo
     gazebo --verbose gzmaze.world
 
-# The input files
-look at sample_maze.mz for an example
+# Changing Images
+Download .png file and format to match the 6 block model of number1.png. Replace name of png in gazebo/models/<name>/materials/scripts/<name>.material 
