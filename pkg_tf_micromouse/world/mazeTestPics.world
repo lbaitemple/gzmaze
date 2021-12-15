@@ -65,10 +65,7 @@
         <falloff>0</falloff>
       </spot>
     </light>
-		<include>
-			<uri>model://smallnumber1</uri>
-		</include>
-        
+
     <model name='smallnumber2'>
       <pose>0 1 0.051 0 -0 0</pose>
       <static>1</static>
@@ -6251,36 +6248,7 @@
           <wrench>-0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='smallnumber1'>
-        <pose>0 0 0.051 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>0 0 0.051 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='smallnumber2'>
-        <pose>0 1 0.051 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>0 1 0.051 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='smallnumber3'>
-        <pose>-1 0 0.051 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>-1 0 0.051 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
+
       <light name='sun'>
         <pose>0 0 10 0 -0 0</pose>
       </light>
