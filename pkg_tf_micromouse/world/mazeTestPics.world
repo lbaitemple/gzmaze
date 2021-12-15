@@ -65,30 +65,10 @@
         <falloff>0</falloff>
       </spot>
     </light>
-    <model name='smallnumber1'>
-      <pose>0 0 0.051 0 -0 0</pose>
-      <static>1</static>
-      <link name='link'>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://smallnumber1/meshes/number.dae</uri>
-              <scale>0.1 0.1 0.001</scale>
-            </mesh>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://smallnumber1/materials/scripts</uri>
-              <uri>model://smallnumber1/materials/textures</uri>
-              <name>Number/One</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
+		<include>
+			<uri>model://smallnumber1</uri>
+		</include>
+        
     <model name='smallnumber2'>
       <pose>0 1 0.051 0 -0 0</pose>
       <static>1</static>
@@ -96,15 +76,15 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://smallnumber1/meshes/number.dae</uri>
+              <uri>model://smallnumber2/meshes/number.dae</uri>
               <scale>0.1 0.1 0.001</scale>
             </mesh>
           </geometry>
           <material>
             <script>
-              <uri>model://smallnumber1/materials/scripts</uri>
-              <uri>model://smallnumber1/materials/textures</uri>
-              <name>Number/One</name>
+              <uri>model://smallnumber2/materials/scripts</uri>
+              <uri>model://smallnumber2/materials/textures</uri>
+              <name>Number/Two</name>
             </script>
           </material>
         </visual>

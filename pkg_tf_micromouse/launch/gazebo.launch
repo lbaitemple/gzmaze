@@ -6,7 +6,7 @@
   <arg name="gui" default="true"/>
   <arg name="headless" default="false"/>
   <arg name="debug" default="false"/>
-  <arg name="model" default="$(find pkg_techfest_imc)/urdf/micromouse_robot.urdf"/>
+  <arg name="model" default="$(find pkg_techfest_imc)/urdf/jetbot.urdf"/>
   <arg name="extra_gazebo_args" default="--verbose"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
