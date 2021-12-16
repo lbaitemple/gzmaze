@@ -205,6 +205,6 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-install(DIRECTORY config launch model scripts world urdf rviz
+install(DIRECTORY config launch models scripts world urdf rviz
     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/${dir}
 )
