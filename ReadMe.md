@@ -19,8 +19,9 @@ cd ~/gzmaze
 cp -r jetbot_description ~/catkin_ws/src/
 cp -r pkg_tf_micromouse ~/catkin_ws/src/
 cd ~/catkin_ws
-catkin_make
-source devel/setup.bash 
+rosdep install --from-paths src --ignore-src -r -y
+colcon build
+source install/setup.sh
 roslaunch pkg_techfest_imc gazebo.launch
 ```
 # What is gzmaze?
