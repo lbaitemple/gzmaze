@@ -1,3 +1,25 @@
+## download gzmaze
+cd ~
+git clone -b neotic https://github.com/lbaitemple/gzmaze
+
+##  setup gazebo-library
+cd gzmaze
+mkdir build
+cd build
+cmake ..
+cd ..
+source setup.bash
+
+## setup ros
+mkdir -p ~/catkin_ws/src
+cd ~/gzmaze
+cp -r jetbot_description ~/catkin_ws/src/
+cp -r pkg_tf_micromouse ~/catkin_ws/src/
+cd ~/catkin_ws
+catkin_make
+source devel/setup.bash 
+roslaunch pkg_techfest_imc gazebo.launch
+
 # What is gzmaze?
 gzmaze is an attempt at flexing the power of [Gazebo](http://gazebosim.org)
 The main goal here is to generate a maze in gazebo from a text file.
