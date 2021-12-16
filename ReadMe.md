@@ -1,7 +1,7 @@
 ## download gzmaze
 ```
 cd ~
-git clone -b neotic https://github.com/lbaitemple/gzmaze
+git clone -b noetic  https://github.com/lbaitemple/gzmaze
 ```
 ##  setup gazebo-library
 ```
