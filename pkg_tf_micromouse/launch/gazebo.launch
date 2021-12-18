@@ -1,5 +1,5 @@
 <launch>
-  <! add environment variable GAZEBO_MODEL_PATH>
+  <!-- add environment variable GAZEBO_MODEL_PATH -->
   <env name="GAZEBO_MODEL_PATH" value="$(find pkg_techfest_imc)/models"/>
   <env name="GAZEBO_PLUGIN_PATH" value="$(find pkg_techfest_imc)/lib"/>
  	
