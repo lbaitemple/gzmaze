@@ -1,6 +1,7 @@
 <launch>
   <! add environment variable GAZEBO_MODEL_PATH>
   <env name="GAZEBO_MODEL_PATH" value="$(find pkg_techfest_imc)/models"/>
+  <env name="GAZEBO_PLUGIN_PATH" value="$(find pkg_techfest_imc)/lib"/>
  	
   <!-- these are the arguments you can pass this launch file, for example paused:=true -->
   <arg name="paused" default="false"/>
