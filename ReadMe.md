@@ -1,10 +1,12 @@
-## download gzmaze
+## download gzmaze (environment as root directory)
+
 ```
-cd ~
+cd ~/environment
 git clone -b noetic  https://github.com/lbaitemple/gzmaze
 ```
 ##  setup gazebo-library
 ```
+cd ~/environment
 cd gzmaze
 mkdir build
 cd build
@@ -14,11 +16,12 @@ source setup.bash
 ```
 ## setup ros
 ```
-mkdir -p ~/catkin_ws/src
-cd ~/gzmaze
-cp -r jetbot_description ~/catkin_ws/src/
-cp -r pkg_tf_micromouse ~/catkin_ws/src/
-cd ~/catkin_ws
+cd ~/environment
+mkdir -p catkin_ws/src
+cd gzmaze
+cp -r jetbot_description ../catkin_ws/src/
+cp -r pkg_tf_micromouse ../catkin_ws/src/
+cd ../catkin_ws
 rosdep install --from-paths src --ignore-src -r -y
 colcon build
 source install/setup.sh
