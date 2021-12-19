@@ -18,7 +18,9 @@ source setup.bash
 ```
 cd ~/environment
 mkdir -p catkin_ws/src
-cd gzmaze
+cd gzmaze/build
+cp *.so ../pkg_tf_micromouse/lib/
+cd ..
 cp -r jetbot_description ../catkin_ws/src/
 cp -r pkg_tf_micromouse ../catkin_ws/src/
 cd ../catkin_ws
